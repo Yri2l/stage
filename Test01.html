@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Statistiques inf&eacute;rentielles</title> 
+  
+  <link rel='shortcut icon' href="https://scicoding.com/content/images/2021/09/chartjs-logo-1.svg"/>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="static/js/chartumdmin.js"></script> 
+<link rel="stylesheet" href="static/css/style.css" type="text/css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="static/js/Lib.js"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+
+<script type="text/javascript" src="./static/js/MathJax.js?config=TeX-AMS_HTML"></script>
+ 
+</head>
+</body>
+
+
+<br>
+<script>
+let X=[4,5,3,1,-5,4,4,5,1,2,3,-5,19,-5,-5]
+
+document.write("moyenne :  ",Moments_r(X,1));
+document.write("<br>");
+document.write("variance :  ", Moments_centre_r(X,2));
+document.write("<br>");
+document.write("minimum :  ",Math.min(...X));
+
+document.write("<br>");
+
+const Dict=Stats_descriptives(X);
+let resultats=Stats_descriptives_html(X);
+
+
+document.write(resultats);
+	
+document.write("<br>");
+
+let RR = getUniqueCount(X);
+const S=RR[0];
+const valeurs=RR[1];
+const effectifs=RR[2];
+
+document.write("<br/>");
+document.write(valeurs);
+document.write("<br/>");
+document.write(effectifs);
+
+</script>
+
+
+<br>
+<p>  fin de la page</p>
+<br>
+
+<script src="static/js/jquerymin.js"></script> 
+</body>
+</html>
+

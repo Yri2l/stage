@@ -1,0 +1,20 @@
+
+Etude de statistique descriptive : simulation de loi (continu et discrete avec une partie application)
+On cherchra des données concrète et appliquer l'algo gradent
+
+Objectif : 
+- Calcul du moment d'ordre 
+(Code en JS donné)
+- Moment Centrés 
+- Mode pour les données discrètes (pour les lois discrètes : Valeur pour lequel il y'a plus d'observation)
+- Classe modale pour les données continues (intervalle dans lequel il y'a plus d'obsrvation)
+- Asymétrie (si pos : la classe modale se trouve à gauche de l'histogramme, si neg: le mode se trouve à droite)
+- Aplatissement (si + : histo très pointu : si - : on a un étallement très grand)
+- Charte JS : 
+Barre de progression : progress (c'est le nom d'une librairie)
+Maquette ;
+- Pour chaque loi :  
+	menu1 : calcul de dentsité à partir des input seulement pour les lois continus
+	menu2 : simulation des données 
+	menu3 : analyse et estimation (algo gradient descendant)
+

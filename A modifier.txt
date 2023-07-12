@@ -1,0 +1,52 @@
+Pour chaque fichier Simulation de loi discrete :
+Modifier l'application Vue & la fonction echantillonLoi
+Rajouter la div #app
+Rajouter la canvas Charte
+Supprimer les script src et tout mettre dans head
+et Surement autre chose que j'ai oublié
+
+
+Le nombre d'intervalle 
+La loi discrete Uniformae : Borne inférieur et supérieur
+
+Tracer : 20 points suffisent et les rejoindre
+
+Pour application ça sera un fichier dat
+
+Finir Simulation
+
+Gamma parametre a et b
+
+Partie Analyse et Estimation : 
+par ex : Valeur de l'estimateur de Bernouilli
+	Value : 
+
+cse 
+
+Application aux données :
+
+-----------------------------------------------------------------------
+Loi continue : 
+- Coller les barres (fait)
+- Couleur (fait)
+
+Dans les Histogrammes mettre 3,4 chiffres après la virgule (fait)
+
+Densité :
+- Mettre une centaine de points (presque fait seulement pour gramma)
+
+Partie Analyse et Estimation
+- Rajouter estimateur pour les autres lois (Poisson)
+- Rajouter estimateur de la methode de moment : Loi de Gamma et Weibull
+- max, min Uniforme
+
+
+Accueil : 
+- mettre l'école (fait)
+- "conctactez moi" en mettant l'adresse en dessous de mon Prenom et Nom (fait)
+
+mettre Esperance et Variance dans la catégorie Propriété 
+
+enlever la partie Simulation 
+
+Mettre sur le Site ensiie 

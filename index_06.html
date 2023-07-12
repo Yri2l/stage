@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<link rel='shortcut icon' href="https://findicons.com/files/icons/2804/plex/512/python.png"/>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+	<link rel="stylesheet" href="chart.css" />
+	
+    <title>Histogramme  avec Chart.js</title>
+  </head>
+  <body>
+  
+    <div style="padding: 30px 30px 10px; width: 700px; height:450px;">
+      <canvas id="myChart"></canvas>
+    </div>
+
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['0.5', '1.5', '3.9', '7', '8.1', '10'],
+        datasets: [{
+            label: "",
+            data: [12, 19, 3, 5, 17, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.55)',
+                'rgba(54, 162, 235, 0.52)',
+                'rgba(255, 206, 86, 0.62)',
+                'rgba(75, 192, 192, 0.72)',
+                'rgba(153, 102, 155, 0.42)',
+                'rgba(255, 159, 64, 0.32)'
+            ],
+            borderColor: [
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+	responsive: true,
+    maintainAspectRatio: false,
+	
+	categoryPercentage: 1.0, // here coller les barres
+    barPercentage: 1.0,  // here 
+        scales: {
+            y: {
+                beginAtZero: true
+            },
+			//xAxes: [{
+            //categoryPercentage: 1.0,
+			//barPercentage: 1.0,
+			
+			//borderWidth:1,
+            //categorySpacing: 1
+			
+			
+			//barThickness: 1,  // number (pixels) or 'flex'
+            //maxBarThickness: 1 // number (pixels) }]
+        },
+		plugins: {
+		legend: {
+            display: false
+         },
+		 }
+	
+    }
+});
+</script>
+
+
+    <!-- Script Source -->
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
